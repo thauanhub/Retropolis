@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 265,
+    "build": 266,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -516,6 +516,118 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Magnolio15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Magnolio16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magnolio16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Magnolio17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magnolio17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Magnolio18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magnolio18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Magnolio19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magnolio19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Magnolio20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magnolio20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Magnolio21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magnolio21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack9",
         "smoothed": false,
         "userAdded": false
       }

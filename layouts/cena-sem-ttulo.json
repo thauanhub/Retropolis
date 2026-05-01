@@ -176,7 +176,13 @@
       "persistentUuid": "70cb2bb4-9113-409c-9048-f107a4b5e902",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "AttackCombo",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -756,7 +762,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Magnolio10",
+                  "image": "Magnolio16",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -792,7 +798,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Magnolio11",
+                  "image": "Magnolio17",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -828,7 +834,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Magnolio12",
+                  "image": "Magnolio18",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -864,7 +870,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Magnolio13",
+                  "image": "Magnolio19",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -900,7 +906,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Magnolio14",
+                  "image": "Magnolio20",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -936,7 +942,308 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Magnolio15",
+                  "image": "Magnolio21",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 13
+                      },
+                      {
+                        "x": 28,
+                        "y": 48
+                      },
+                      {
+                        "x": 9,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack9",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1046,6 +1353,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "aiGeneratedEventId": "01KQHQNCB4DJERPKNHJDBPBAFT",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1056,6 +1364,30 @@
               "parameters": [
                 "Magnolio",
                 "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack2\""
               ]
             }
           ],
@@ -1074,6 +1406,7 @@
           ]
         },
         {
+          "aiGeneratedEventId": "01KQHQNCB4DJERPKNHJDBPBAFT",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1083,6 +1416,30 @@
               "parameters": [
                 "Magnolio",
                 "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack2\""
               ]
             }
           ],
@@ -1153,6 +1510,7 @@
           ]
         },
         {
+          "aiGeneratedEventId": "01KQHQNCB4DJERPKNHJDBPBAFT",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1162,6 +1520,30 @@
               "parameters": [
                 "Magnolio",
                 "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack2\""
               ]
             }
           ],
@@ -1193,12 +1575,13 @@
             },
             {
               "type": {
-                "inverted": true,
-                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                "value": "NumberObjectVariable"
               },
               "parameters": [
                 "Magnolio",
-                "PlatformerObject"
+                "AttackCombo",
+                "=",
+                "0"
               ]
             },
             {
@@ -1218,6 +1601,129 @@
                 "Animation",
                 "=",
                 "\"Attack\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "endsWith",
+                "\"Attack\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Magnolio",
+                "AttackCombo",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"e\""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Magnolio",
+                "AttackCombo",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Attack2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Magnolio",
+                "AttackCombo",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Magnolio",
+                "AttackCombo",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KQHQKKPX2Q30R7RXPXN6AXTY",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Magnolio",
+                "Animation",
+                "=",
+                "\"Idle\""
               ]
             }
           ]
