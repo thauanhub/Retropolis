@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 271,
+    "build": 269,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -821,7 +821,7 @@
         "userAdded": false
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/15c1797cbcb41c3a753b6bbb21cfa60284cfaf81c9891c3abf78a8e0e1cacf59_8BitOperatorPlus8Regular_Edited.png",
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
@@ -833,7 +833,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/b0c67a3ffd38bb6a989dcd6fd82fd9d02becb98fe305ac13c3140616c5a19f35_Small Brown Button_Hovered.png",
+        "file": "assets/Small Brown Button_Hovered.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Small Brown Button_Hovered.png",
@@ -845,7 +845,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/4b14769489f9862882eba6d5463a8ccdec878e03a2abc1dca8b7d92e51416d3d_Small Brown Button_Idle.png",
+        "file": "assets/Small Brown Button_Idle.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Small Brown Button_Idle.png",
@@ -857,7 +857,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/7332f7b9d2fbb8370ae5ba5b62d2cbfb23ba6392d8e5d071b4c16b2e45a40d38_Small Brown Button_Pressed.png",
+        "file": "assets/Small Brown Button_Pressed.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Small Brown Button_Pressed.png",
@@ -869,7 +869,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
         "kind": "bitmapFont",
         "metadata": "",
         "name": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
@@ -880,7 +880,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Open Font License/44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+        "file": "assets/PressStart2P-Regular.ttf",
         "kind": "font",
         "metadata": "",
         "name": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
@@ -899,7 +899,7 @@
         "userAdded": false
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/71391fe38e15db05bf2b1c97baa7614d29fa5356eb85768828d008ee642adf54_Small Grey Button_Hovered.png",
+        "file": "assets/Small Grey Button_Hovered.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Small Grey Button_Hovered.png",
@@ -911,7 +911,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/1364d145f941a32e4bd4525752a92c7e6ea2d66aef650a338e5f3313aff024b2_Small Grey Button_Idle.png",
+        "file": "assets/Small Grey Button_Idle.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Small Grey Button_Idle.png",
@@ -923,7 +923,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/4a58f1d4e9a5a11004575379038809b9c41a54f30b5ce046de45a45786d9a95f_Small Grey Button_Pressed.png",
+        "file": "assets/Small Grey Button_Pressed.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Small Grey Button_Pressed.png",
@@ -1095,7 +1095,7 @@
         "userAdded": false
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Ragnar Random/Rock Music/944947b39a41f341b9eb201663f7b7876339841f5d0de56dbc74b9c1b7244322_01 - Rock City Ransom Revised version.aac",
+        "file": "assets/01 - Rock City Ransom Revised version.aac",
         "kind": "audio",
         "metadata": "",
         "name": "944947b39a41f341b9eb201663f7b7876339841f5d0de56dbc74b9c1b7244322_01 - Rock City Ransom Revised version.aac",
@@ -1109,7 +1109,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Music/Underscoring/fa523b6b2ce32612d110eba193603c7e5ae0edabe18dc244a1ce56fe5b95d244_Travelers Notebook.aac",
+        "file": "assets/Travelers Notebook.aac",
         "kind": "audio",
         "metadata": "",
         "name": "fa523b6b2ce32612d110eba193603c7e5ae0edabe18dc244a1ce56fe5b95d244_Travelers Notebook.aac",
@@ -1123,7 +1123,7 @@
         }
       },
       {
-        "file": "https://asset-resources.gdevelop.io/public-resources/Music/Horror/bec421205825a30dc8d8db1d6a37eff4d04497bf96dc3084cbf3c1f588807d68_The Abyss.aac",
+        "file": "assets/The Abyss.aac",
         "kind": "audio",
         "metadata": "",
         "name": "bec421205825a30dc8d8db1d6a37eff4d04497bf96dc3084cbf3c1f588807d68_The Abyss.aac",
@@ -5329,9 +5329,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 1,
               "name": "DestruirFora",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 1,
               "unseenGraceDistance": 10000
             }
           ],
@@ -6885,6 +6885,17 @@
                     "Animation",
                     "=",
                     "\"Idle\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "isAttacking",
+                    "False",
+                    ""
                   ]
                 }
               ]
