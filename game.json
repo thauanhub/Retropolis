@@ -1829,7 +1829,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3925161175488272,
+        "zoomFactor": 1.6337626779315209,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2462,12 +2462,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "HUD",
           "name": "HUD_coletar_chave",
-          "persistentUuid": "a0713e09-6b4a-4c30-ac1a-fcc538e2d6e2",
+          "persistentUuid": "1fbd4a1d-4ea8-4ee6-af80-cc8c1f1d63a0",
           "width": 0,
-          "x": 528,
-          "y": 600,
+          "x": 512,
+          "y": 559,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -2478,12 +2478,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "HUD",
           "name": "HUD_interagir_com_mecanismo",
-          "persistentUuid": "067b88f0-9ba9-44eb-a7b3-a27147e245b9",
+          "persistentUuid": "5927e68e-43e7-49b4-83b9-1aa011854230",
           "width": 0,
-          "x": 515,
-          "y": 604,
+          "x": 492,
+          "y": 563,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -2494,12 +2494,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "HUD",
           "name": "HUD_ler_documento",
-          "persistentUuid": "010042bc-4332-4f2c-b0e7-257c5f975cd8",
+          "persistentUuid": "bdb230ae-cbbe-4a8d-ab63-12363a8b9f34",
           "width": 0,
-          "x": 559,
-          "y": 604,
+          "x": 552,
+          "y": 565,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -2510,12 +2510,12 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "HUD",
           "name": "HUD_abrir_porta",
-          "persistentUuid": "dee81b44-d982-4703-b8de-95634ea4878a",
+          "persistentUuid": "1b22ab0e-62bb-436b-9abf-0a21a871faa5",
           "width": 0,
-          "x": 579,
-          "y": 599,
+          "x": 574,
+          "y": 565,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -4764,6 +4764,16 @@
               "name": "Collision",
               "type": "boolean",
               "value": true
+            },
+            {
+              "name": "ChaveColetada",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "CarregaChave",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -9010,52 +9020,12 @@
                 },
                 {
                   "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "Icone_Chave"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "ItemPerto",
+                    "Slot1",
                     "=",
-                    "\"Nenhum\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "HUD_coletar_chave"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "HUD_interagir_com_mecanismo"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "HUD_ler_documento"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "HUD_abrir_porta"
+                    "\"Vazio\""
                   ]
                 }
               ],
@@ -9969,6 +9939,17 @@
                     "Health",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Guardas",
+                    "Animation",
+                    "!=",
+                    "\"Death\""
+                  ]
                 }
               ],
               "actions": [
@@ -10036,6 +10017,58 @@
                         ""
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "=",
+                    "\"Death\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    ""
                   ]
                 }
               ]
@@ -10860,6 +10893,14 @@
                 },
                 {
                   "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Icone_Chave"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -11075,7 +11116,7 @@
                     "value": "Distance"
                   },
                   "parameters": [
-                    "PatrulheiroChave",
+                    "Magnolio",
                     "PatrulheiroChave",
                     "80",
                     ""
