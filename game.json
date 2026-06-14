@@ -1231,6 +1231,70 @@
         "name": "Dano2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Patrulheiro7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Patrulheiro7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Patrulheiro8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Patrulheiro8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Patrulheiro9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Patrulheiro9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Patrulheiro10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Patrulheiro10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Patrulheiro11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Patrulheiro11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Patrulheiro12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Patrulheiro12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Damage.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Damage",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Damage2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Damage2",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1605,7 +1669,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.624453782660004,
+        "zoomFactor": 1.745802398746794,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1649,8 +1713,8 @@
           "name": "Magnolio",
           "persistentUuid": "3e097f57-701e-42b7-bdb3-9ce0eeb1d80c",
           "width": 0,
-          "x": 327,
-          "y": 513,
+          "x": 315,
+          "y": 515,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -4425,6 +4489,11 @@
               "name": "isAtacckingEnemie",
               "type": "boolean",
               "value": false
+            },
+            {
+              "name": "Collision",
+              "type": "boolean",
+              "value": true
             }
           ],
           "effects": [],
@@ -4432,9 +4501,9 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 2,
+              "Health": 3,
               "CurrentHealth": 0,
-              "MaxHealth": 2,
+              "MaxHealth": 3,
               "DamageCooldown": 0,
               "AllowOverHealing": false,
               "IsHealthJustDamaged": false,
@@ -4498,6 +4567,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4540,6 +4619,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4582,6 +4671,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4624,6 +4723,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4666,6 +4775,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4708,6 +4827,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4763,6 +4892,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4805,6 +4944,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4847,6 +4996,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4889,6 +5048,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4944,6 +5113,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -4986,6 +5165,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -5028,6 +5217,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -5070,6 +5269,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -5112,6 +5321,16 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -5154,6 +5373,458 @@
                           "name": "Point",
                           "x": 68.5,
                           "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Death",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro7",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro8",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro9",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro10",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro11",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro12",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Damage",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Damage",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Damage2",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
                         }
                       ],
                       "originPoint": {
@@ -5676,6 +6347,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Magnolio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7071,6 +7743,17 @@
                 },
                 {
                   "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Collision",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -7098,6 +7781,61 @@
                     "Shoot",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "=",
+                    "\"Damage\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "=",
+                    "\"Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "=",
+                    "\"Idle\""
+                  ]
                 }
               ]
             },
@@ -7118,11 +7856,68 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Delete"
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
                     "Patrulheiro",
+                    "Animation",
+                    "=",
+                    "\"Death\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Collision",
+                    "False",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Patrulheiro",
+                        "Animation",
+                        "=",
+                        "\"Death\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Patrulheiro",
+                        "Animation"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Patrulheiro",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -7137,6 +7932,28 @@
                   "parameters": [
                     "Patrulheiro",
                     "PlatformerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "!=",
+                    "\"Damage\""
                   ]
                 }
               ],
@@ -7150,35 +7967,6 @@
                     "Animation",
                     "=",
                     "\"Walk\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                  },
-                  "parameters": [
-                    "Patrulheiro",
-                    "PlatformerObject"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Patrulheiro",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
                   ]
                 }
               ]
@@ -7205,6 +7993,17 @@
                     "Patrulheiro",
                     "isAtacckingEnemie",
                     "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
                     ""
                   ]
                 }
@@ -7247,6 +8046,17 @@
                     "=",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -7284,6 +8094,17 @@
                     "Patrulheiro",
                     "Flippable"
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -7311,6 +8132,17 @@
                   "parameters": [
                     "Patrulheiro",
                     "Flippable"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
                   ]
                 }
               ],
@@ -7351,6 +8183,28 @@
                   "parameters": [
                     "Patrulheiro",
                     "Flippable"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "!=",
+                    "\"Damage\""
                   ]
                 }
               ],
@@ -7401,6 +8255,27 @@
                   "parameters": [
                     "Patrulheiro",
                     "Flippable"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "!=",
+                    "\"Damage\""
                   ]
                 }
               ],
@@ -7462,6 +8337,17 @@
                     "Magnolio",
                     "Health",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "!=",
+                    "\"Damage\""
                   ]
                 },
                 {
@@ -7647,6 +8533,38 @@
                     ">=",
                     "Magnolio.X()"
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "!=",
+                    "\"Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "abs(Patrulheiro.PointY(\"Center\") - Magnolio.PointY(\"Center\"))",
+                    "<=",
+                    "50"
+                  ]
                 }
               ],
               "actions": [
@@ -7705,6 +8623,38 @@
                     "Patrulheiro",
                     ">=",
                     "Magnolio.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Patrulheiro",
+                    "Animation",
+                    "!=",
+                    "\"Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "abs(Patrulheiro.PointY(\"Center\") - Magnolio.PointY(\"Center\"))",
+                    "<=",
+                    "50"
                   ]
                 }
               ],
