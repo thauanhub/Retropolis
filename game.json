@@ -1295,6 +1295,77 @@
         "name": "Damage2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/key_fase1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/key_fase1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Mini.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Kenney Mini Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/key_sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/key_sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/key_sound(cut).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/key_sound(cut).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fase1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/fase1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -8885,7 +8956,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2952916551236047,
+        "zoomFactor": 1.0615714305220094,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -8934,8 +9005,8 @@
           "name": "Magnolio",
           "persistentUuid": "3e097f57-701e-42b7-bdb3-9ce0eeb1d80c",
           "width": 0,
-          "x": 552,
-          "y": 580,
+          "x": 553,
+          "y": 590,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -9066,8 +9137,8 @@
           "name": "Patrulheiro",
           "persistentUuid": "c54a980b-5ed0-4c44-8285-efc6fb4402f1",
           "width": 86,
-          "x": 371,
-          "y": 554,
+          "x": 229,
+          "y": 553,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -9103,6 +9174,55 @@
           "x": 248,
           "y": 576,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 3,
+          "keepRatio": true,
+          "layer": "",
+          "name": "txtDuvida",
+          "persistentUuid": "79661e8a-e867-4b29-9bde-98485e408ed6",
+          "width": 10,
+          "x": 461,
+          "y": 592,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "txtGanhou",
+          "persistentUuid": "9445f041-e69a-4c8c-bb30-2c5bc472d3ee",
+          "width": 0,
+          "x": 308,
+          "y": 552,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "txtPressione",
+          "persistentUuid": "a33b612e-9ac9-4114-911a-99551b5ea58e",
+          "width": 0,
+          "x": 491,
+          "y": 268,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11321,10 +11441,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -11441,6 +11561,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11493,6 +11618,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11545,6 +11675,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11597,6 +11732,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11649,6 +11789,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11701,6 +11846,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11766,6 +11916,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11818,6 +11973,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11870,6 +12030,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11922,6 +12087,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -11987,6 +12157,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12039,6 +12214,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12091,6 +12271,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12143,6 +12328,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12195,6 +12385,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12247,6 +12442,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12312,6 +12512,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12364,6 +12569,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12416,6 +12626,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12468,6 +12683,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12520,6 +12740,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12572,6 +12797,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12637,6 +12867,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12689,6 +12924,11 @@
                           "name": "VisaoBaixo",
                           "x": 50,
                           "y": 96
+                        },
+                        {
+                          "name": "Key",
+                          "x": 35.5,
+                          "y": 80
                         }
                       ],
                       "originPoint": {
@@ -12983,6 +13223,199 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Chave",
+          "persistentUuid": "061ba9e5-7e87-4ae5-929e-dcf3037ab4e3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/key_fase1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 1
+                          },
+                          {
+                            "x": 14,
+                            "y": 1
+                          },
+                          {
+                            "x": 14,
+                            "y": 15
+                          },
+                          {
+                            "x": 2,
+                            "y": 15
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "txtDuvida",
+          "persistentUuid": "171ecc26-7b8c-4dc2-9b00-442a70e0cffe",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "?",
+          "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "248;231;28",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 1,
+            "shadowColor": "248;231;28",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "?",
+            "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "txtGanhou",
+          "persistentUuid": "00dd8abf-092f-4aa0-afb2-0461bbef2c22",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Você recuperou a chave e saiu da prisão!",
+          "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Você recuperou a chave e saiu da prisão!",
+            "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "txtPressione",
+          "persistentUuid": "aa969a77-c702-40c2-9d7e-215be687e1ed",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Pressione \"E\" para tentar pegar a chave!",
+          "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Pressione \"E\" para tentar pegar a chave!",
+            "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -13036,6 +13469,12 @@
             "objectName": "Patrulheiro"
           },
           {
+            "objectName": "txtDuvida"
+          },
+          {
+            "objectName": "Chave"
+          },
+          {
             "objectName": "ColisorLeft"
           },
           {
@@ -13043,6 +13482,12 @@
           },
           {
             "objectName": "ShootEnemie"
+          },
+          {
+            "objectName": "txtGanhou"
+          },
+          {
+            "objectName": "txtPressione"
           }
         ]
       },
@@ -13089,6 +13534,54 @@
                 "PlatformerObject",
                 "=",
                 "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Chave",
+                "Patrulheiro.PointX(\"Key\")",
+                "Patrulheiro.PointY(\"Key\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "txtDuvida"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "txtGanhou"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "txtPressione"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/fase1.mp3",
+                "yes",
+                "40",
+                ""
               ]
             }
           ]
@@ -14234,6 +14727,16 @@
                 },
                 {
                   "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Chave",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
@@ -14256,10 +14759,27 @@
                 },
                 {
                   "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "txtDuvida",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1"
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "txtDuvida"
                   ]
                 },
                 {
@@ -14343,6 +14863,16 @@
                 },
                 {
                   "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Chave",
+                    "Flippable",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
@@ -14390,32 +14920,16 @@
                     "50",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"e\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "Show"
                   },
                   "parameters": [
-                    "chance_pegar",
-                    "=",
-                    "RandomInRange(1,100)"
+                    "txtPressione",
+                    ""
                   ]
                 }
               ],
@@ -14425,61 +14939,41 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "NumberVariable"
+                        "value": "KeyFromTextPressed"
                       },
                       "parameters": [
-                        "chance_pegar",
-                        "<=",
-                        "40"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "possui_chave",
-                        "True",
-                        ""
+                        "",
+                        "\"e\""
                       ]
                     },
                     {
                       "type": {
-                        "value": "Scene"
+                        "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [
-                        "",
-                        "\"Cena sem título\"",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "chance_pegar",
-                        ">=",
-                        "60"
-                      ]
+                      "parameters": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetBooleanVariable"
+                        "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "possui_chave",
-                        "False",
-                        ""
+                        "chance_pegar",
+                        "=",
+                        "RandomInRange(1,100)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/key_sound(cut).mp3",
+                        "",
+                        "65",
+                        "1"
                       ]
                     }
                   ],
@@ -14489,34 +14983,116 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::Once"
+                            "value": "NumberVariable"
                           },
-                          "parameters": []
+                          "parameters": [
+                            "chance_pegar",
+                            "<",
+                            "30"
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "Health::Health::Hit"
+                            "value": "SetBooleanVariable"
                           },
                           "parameters": [
-                            "Magnolio",
-                            "Health",
-                            "1",
-                            "",
-                            "",
+                            "possui_chave",
+                            "True",
                             ""
                           ]
                         },
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                            "value": "ActivateBehavior"
                           },
                           "parameters": [
                             "Magnolio",
-                            "Animation",
-                            "=",
-                            "\"Dano\""
+                            "PlatformerObject",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Show"
+                          },
+                          "parameters": [
+                            "txtGanhou",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Cena sem título\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "chance_pegar",
+                            ">=",
+                            "30\n"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::Hit"
+                              },
+                              "parameters": [
+                                "Magnolio",
+                                "Health",
+                                "1",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Magnolio",
+                                "Animation",
+                                "=",
+                                "\"Dano\""
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -14527,6 +15103,118 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Patrulheiro",
+                "Flippable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "Chave",
+                "=",
+                "Patrulheiro.PointX(\"Key\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "Chave",
+                "=",
+                "Patrulheiro.PointY(\"Key\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Patrulheiro",
+                "Flippable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "Chave",
+                "=",
+                "Patrulheiro.PointX(\"Key\") - 13"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "Chave",
+                "=",
+                "Patrulheiro.PointY(\"Key\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "Patrulheiro",
+                "Variable",
+                "=",
+                "\"stop\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Patrulheiro",
+                "Magnolio",
+                "50",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "txtPressione"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -14648,6 +15336,60 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -14698,6 +15440,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "VerticalTiledSpriteParallax",
