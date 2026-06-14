@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 269,
+    "build": 271,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -1366,6 +1366,54 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/mochila_slots.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/mochila_slots.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/btn_coletar_chave.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/btn_coletar_chave.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/btn_interagir_mecanismo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/btn_interagir_mecanismo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/btn_ler_documento.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/btn_ler_documento.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/btn_abrir_porta.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/btn_abrir_porta.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/chave.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/chave.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1374,7 +1422,48 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "InventarioCapacidade",
+      "type": "number",
+      "value": 5
+    },
+    {
+      "name": "Slot1",
+      "type": "string",
+      "value": "Vazio"
+    },
+    {
+      "name": "Slot2",
+      "type": "string",
+      "value": "Vazio"
+    },
+    {
+      "name": "Slot3",
+      "type": "string",
+      "value": "Vazio"
+    },
+    {
+      "name": "Slot4",
+      "type": "string",
+      "value": "Vazio"
+    },
+    {
+      "name": "Slot5",
+      "type": "string",
+      "value": "Vazio"
+    },
+    {
+      "name": "ItemPerto",
+      "type": "string",
+      "value": "Nenhum"
+    },
+    {
+      "name": "TemChaveCela",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "b": 0,
@@ -1740,12 +1829,24 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.745802398746794,
+        "zoomFactor": 0.3925161175488272,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Guardas",
+          "objects": [
+            {
+              "name": "Patrulheiro"
+            },
+            {
+              "name": "PatrulheiroChave"
+            }
+          ]
+        }
+      ],
       "variables": [
         {
           "name": "a",
@@ -1995,23 +2096,6 @@
           "x": -232,
           "y": 412,
           "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 86,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Patrulheiro",
-          "persistentUuid": "c54a980b-5ed0-4c44-8285-efc6fb4402f1",
-          "width": 86,
-          "x": 260,
-          "y": 553,
-          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2318,6 +2402,121 @@
           "x": -2,
           "y": 333,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 113,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Mochila",
+          "persistentUuid": "aa5d09d1-20b6-46d7-a44e-c6df7d9f46a9",
+          "width": 240,
+          "x": 34,
+          "y": 149,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 36,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Icone_Chave",
+          "persistentUuid": "9258f0eb-d2ca-4846-b8b4-1fde09c2eb95",
+          "width": 65,
+          "x": 36,
+          "y": 198,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 90,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PatrulheiroChave",
+          "persistentUuid": "95ba6a23-ac66-48ba-9b97-c4a1cda9c103",
+          "width": 90,
+          "x": 246,
+          "y": 549,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HUD_coletar_chave",
+          "persistentUuid": "a0713e09-6b4a-4c30-ac1a-fcc538e2d6e2",
+          "width": 0,
+          "x": 528,
+          "y": 600,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HUD_interagir_com_mecanismo",
+          "persistentUuid": "067b88f0-9ba9-44eb-a7b3-a27147e245b9",
+          "width": 0,
+          "x": 515,
+          "y": 604,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HUD_ler_documento",
+          "persistentUuid": "010042bc-4332-4f2c-b0e7-257c5f975cd8",
+          "width": 0,
+          "x": 559,
+          "y": 604,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "HUD_abrir_porta",
+          "persistentUuid": "dee81b44-d982-4703-b8de-95634ea4878a",
+          "width": 0,
+          "x": 579,
+          "y": 599,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6190,11 +6389,1797 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "PatrulheiroChave",
+          "persistentUuid": "346919a4-336f-4c6c-aa2d-ffd3677aa614",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Variable",
+              "type": "string",
+              "value": "right"
+            },
+            {
+              "name": "isAtacckingEnemie",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Collision",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "CarregaChave",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "ChaveColetada",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            },
+            {
+              "isFolded": true,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": true,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": true,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "slopeMaxAngle": 60,
+              "useLegacyTrajectory": false,
+              "useRepeatedJump": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Walk",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite12",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite13",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite14",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite15",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite16",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite17",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle4",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle7",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle8",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.12,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro2",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro3",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro4",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro5",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro6",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Death",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro7",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro8",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro9",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro10",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro11",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Patrulheiro12",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Damage",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Damage",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Damage2",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 68.5,
+                          "y": 70.5
+                        },
+                        {
+                          "name": "VisaoCima",
+                          "x": 50,
+                          "y": 60
+                        },
+                        {
+                          "name": "VisaoBaixo",
+                          "x": 50,
+                          "y": 96
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 51,
+                        "y": 73
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 37,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 55
+                          },
+                          {
+                            "x": 58,
+                            "y": 96
+                          },
+                          {
+                            "x": 37,
+                            "y": 96
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Mochila",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/mochila_slots.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 331,
+                            "y": 10
+                          },
+                          {
+                            "x": 331,
+                            "y": 151
+                          },
+                          {
+                            "x": 10,
+                            "y": 151
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_coletar_chave",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/btn_coletar_chave.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 319,
+                            "y": 10
+                          },
+                          {
+                            "x": 319,
+                            "y": 55
+                          },
+                          {
+                            "x": 10,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_interagir_com_mecanismo",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/btn_interagir_mecanismo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 359,
+                            "y": 10
+                          },
+                          {
+                            "x": 359,
+                            "y": 55
+                          },
+                          {
+                            "x": 10,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_ler_documento",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/btn_ler_documento.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 253,
+                            "y": 10
+                          },
+                          {
+                            "x": 253,
+                            "y": 55
+                          },
+                          {
+                            "x": 10,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_abrir_porta",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/btn_abrir_porta.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 213,
+                            "y": 10
+                          },
+                          {
+                            "x": 213,
+                            "y": 55
+                          },
+                          {
+                            "x": 10,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Icone_Chave",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/chave.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 207,
+                            "y": 42
+                          },
+                          {
+                            "x": 490,
+                            "y": 42
+                          },
+                          {
+                            "x": 490,
+                            "y": 331
+                          },
+                          {
+                            "x": 207,
+                            "y": 331
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "HUD",
+            "children": [
+              {
+                "objectName": "Mochila"
+              },
+              {
+                "objectName": "HUD_coletar_chave"
+              },
+              {
+                "objectName": "HUD_interagir_com_mecanismo"
+              },
+              {
+                "objectName": "HUD_ler_documento"
+              },
+              {
+                "objectName": "HUD_abrir_porta"
+              },
+              {
+                "objectName": "Icone_Chave"
+              }
+            ]
+          },
           {
             "folderName": "Magnolio",
             "children": [
@@ -6241,6 +8226,9 @@
           },
           {
             "objectName": "Patrulheiro"
+          },
+          {
+            "objectName": "PatrulheiroChave"
           },
           {
             "objectName": "ColisorLeft"
@@ -6418,7 +8406,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Magnolio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6956,7 +8943,7 @@
                   "parameters": [
                     "Magnolio",
                     "Health",
-                    "3",
+                    "5",
                     "",
                     "",
                     ""
@@ -7009,6 +8996,66 @@
                     "Magnolio",
                     "PlatformerObject",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "TemChaveCela",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Icone_Chave"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"Nenhum\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_coletar_chave"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_interagir_com_mecanismo"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_ler_documento"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_abrir_porta"
                   ]
                 }
               ],
@@ -7735,7 +9782,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "ColisorLeft",
                     "",
                     "",
@@ -7749,7 +9796,7 @@
                     "value": "SetStringObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Variable",
                     "=",
                     "\"left\""
@@ -7765,7 +9812,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "ColisorRight",
                     "",
                     "",
@@ -7779,7 +9826,7 @@
                     "value": "SetStringObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Variable",
                     "=",
                     "\"right\""
@@ -7790,7 +9837,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlipX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable",
                     "no"
                   ]
@@ -7805,7 +9852,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Shoot",
                     "",
                     "",
@@ -7817,7 +9864,7 @@
                     "value": "BooleanObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Collision",
                     "True",
                     ""
@@ -7836,7 +9883,7 @@
                     "value": "Health::Health::Hit"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     "1",
                     "",
@@ -7858,7 +9905,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Damage\""
@@ -7874,7 +9921,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Damage\""
@@ -7885,7 +9932,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation"
                   ]
                 },
@@ -7902,7 +9949,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Idle\""
@@ -7918,7 +9965,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -7930,7 +9977,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Death\""
@@ -7941,7 +9988,7 @@
                     "value": "SetBooleanObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Collision",
                     "False",
                     ""
@@ -7957,7 +10004,7 @@
                         "value": "AnimatableCapability::AnimatableBehavior::Name"
                       },
                       "parameters": [
-                        "Patrulheiro",
+                        "Guardas",
                         "Animation",
                         "=",
                         "\"Death\""
@@ -7968,7 +10015,7 @@
                         "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
                       },
                       "parameters": [
-                        "Patrulheiro",
+                        "Guardas",
                         "Animation"
                       ]
                     },
@@ -8001,7 +10048,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject"
                   ]
                 },
@@ -8011,7 +10058,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8021,7 +10068,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "!=",
                     "\"Damage\""
@@ -8034,7 +10081,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Walk\""
@@ -8050,7 +10097,7 @@
                     "value": "StringObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Variable",
                     "=",
                     "\"right\""
@@ -8061,7 +10108,7 @@
                     "value": "BooleanObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "isAtacckingEnemie",
                     "=",
                     ""
@@ -8073,7 +10120,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8085,7 +10132,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "40"
@@ -8101,7 +10148,7 @@
                     "value": "StringObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Variable",
                     "=",
                     "\"left\""
@@ -8112,7 +10159,7 @@
                     "value": "BooleanObjectVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "isAtacckingEnemie",
                     "=",
                     ""
@@ -8124,7 +10171,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8136,7 +10183,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlipX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable",
                     "yes"
                   ]
@@ -8146,7 +10193,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "-40"
@@ -8162,7 +10209,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlippedX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable"
                   ]
                 },
@@ -8172,7 +10219,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8184,7 +10231,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "-40"
@@ -8201,7 +10248,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlippedX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable"
                   ]
                 },
@@ -8211,7 +10258,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8223,7 +10270,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "40"
@@ -8240,7 +10287,7 @@
                     "value": "Distance"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Magnolio",
                     "200",
                     ""
@@ -8252,7 +10299,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlippedX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable"
                   ]
                 },
@@ -8262,7 +10309,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8272,7 +10319,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "!=",
                     "\"Damage\""
@@ -8285,7 +10332,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Walk\""
@@ -8296,7 +10343,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "40"
@@ -8313,7 +10360,7 @@
                     "value": "Distance"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Magnolio",
                     "200",
                     ""
@@ -8324,7 +10371,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlippedX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable"
                   ]
                 },
@@ -8333,7 +10380,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8343,7 +10390,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "!=",
                     "\"Damage\""
@@ -8356,7 +10403,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Walk\""
@@ -8367,7 +10414,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "-40"
@@ -8383,7 +10430,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Attack\""
@@ -8394,7 +10441,7 @@
                     "value": "Sprite"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "=",
                     "3"
                   ]
@@ -8415,7 +10462,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "!=",
                     "\"Damage\""
@@ -8436,8 +10483,8 @@
                   "parameters": [
                     "",
                     "ShootEnemie",
-                    "Patrulheiro.PointX(\"Point\")",
-                    "Patrulheiro.PointY(\"Point\") - 2",
+                    "Guardas.PointX(\"Point\")",
+                    "Guardas.PointY(\"Point\") - 2",
                     ""
                   ]
                 },
@@ -8462,7 +10509,7 @@
                         "value": "PosX"
                       },
                       "parameters": [
-                        "Patrulheiro",
+                        "Guardas",
                         ">=",
                         "Magnolio.X()"
                       ]
@@ -8474,7 +10521,7 @@
                         "value": "FlippableCapability::FlippableBehavior::FlipX"
                       },
                       "parameters": [
-                        "Patrulheiro",
+                        "Guardas",
                         "Flippable",
                         "yes"
                       ]
@@ -8501,7 +10548,7 @@
                         "value": "PosX"
                       },
                       "parameters": [
-                        "Patrulheiro",
+                        "Guardas",
                         ">=",
                         "Magnolio.X()"
                       ]
@@ -8513,7 +10560,7 @@
                         "value": "FlippableCapability::FlippableBehavior::FlipX"
                       },
                       "parameters": [
-                        "Patrulheiro",
+                        "Guardas",
                         "Flippable",
                         "no"
                       ]
@@ -8578,7 +10625,7 @@
                     "value": "Distance"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Magnolio",
                     "150",
                     ""
@@ -8590,7 +10637,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlippedX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable"
                   ]
                 },
@@ -8600,7 +10647,7 @@
                     "value": "PosX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     ">=",
                     "Magnolio.X()"
                   ]
@@ -8611,7 +10658,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8621,7 +10668,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "!=",
                     "\"Damage\""
@@ -8632,7 +10679,7 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "abs(Patrulheiro.PointY(\"Center\") - Magnolio.PointY(\"Center\"))",
+                    "abs(Guardas.PointY(\"Center\") - Magnolio.PointY(\"Center\"))",
                     "<=",
                     "50"
                   ]
@@ -8644,7 +10691,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Attack\""
@@ -8655,7 +10702,7 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "0"
@@ -8671,7 +10718,7 @@
                     "value": "Distance"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Magnolio",
                     "150",
                     ""
@@ -8682,7 +10729,7 @@
                     "value": "FlippableCapability::FlippableBehavior::FlippedX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Flippable"
                   ]
                 },
@@ -8691,7 +10738,7 @@
                     "value": "PosX"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     ">=",
                     "Magnolio.X()"
                   ]
@@ -8702,7 +10749,7 @@
                     "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Health",
                     ""
                   ]
@@ -8712,7 +10759,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "!=",
                     "\"Damage\""
@@ -8723,7 +10770,7 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "abs(Patrulheiro.PointY(\"Center\") - Magnolio.PointY(\"Center\"))",
+                    "abs(Guardas.PointY(\"Center\") - Magnolio.PointY(\"Center\"))",
                     "<=",
                     "50"
                   ]
@@ -8735,7 +10782,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "Animation",
                     "=",
                     "\"Attack\""
@@ -8746,10 +10793,455 @@
                     "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
                   },
                   "parameters": [
-                    "Patrulheiro",
+                    "Guardas",
                     "PlatformerObject",
                     "=",
                     "0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Inventário e Itens",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_coletar_chave"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_interagir_com_mecanismo"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_ler_documento"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_abrir_porta"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"Nenhum\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Slot1",
+                    "=",
+                    "\"Vazio\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Icone_Chave"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Slot1",
+                    "=",
+                    "\"ChaveCela\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "Icone_Chave",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "PatrulheiroChave",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "CarregaChave",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "ChaveColetada",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "TemChaveCela",
+                    "=",
+                    "="
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "HUD_coletar_chave",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_ler_documento"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_interagir_com_mecanismo"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_abrir_porta"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"ChaveCela\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"ChaveCela\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "CarregaChave",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "ChaveColetada",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "PatrulheiroChave",
+                    "80",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_coletar_chave"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"Nenhum\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"e\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"ChaveCela\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "TemChaveCela",
+                    "=",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "PatrulheiroChave",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "CarregaChave",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "ChaveColetada",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "TemChaveCela",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Slot1",
+                    "=",
+                    "\"ChaveCela\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    "ChaveColetada",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_coletar_chave"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ItemPerto",
+                    "=",
+                    "\"Nenhum\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PatrulheiroChave",
+                    ""
                   ]
                 }
               ]
@@ -8840,6 +11332,60 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
