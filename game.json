@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 271,
+    "build": 269,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -1414,6 +1414,22 @@
         "name": "assets/chave.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_bar_life.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_bar_life.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_panel_life.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_panel_life.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1702,7 +1718,7 @@
               },
               "parameters": [
                 "",
-                "\"Cena sem título\"",
+                "\"Fase2\"",
                 ""
               ]
             }
@@ -1810,8 +1826,8 @@
     {
       "b": 0,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Cena_32sem_32t_237tulo",
-      "name": "Cena sem título",
+      "mangledName": "Fase2",
+      "name": "Fase2",
       "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -1829,7 +1845,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.6337626779315209,
+        "zoomFactor": 0.7619362677197695,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2517,6 +2533,39 @@
           "x": 574,
           "y": 565,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_VidaBarra",
+          "persistentUuid": "d276942f-18fd-4a15-bbfd-8b385f5dab98",
+          "width": 0,
+          "x": 52,
+          "y": 36,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_Magnolio",
+          "persistentUuid": "055063d4-526c-4bda-889e-4001d85c3325",
+          "width": 176,
+          "x": 6,
+          "y": 15,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8162,6 +8211,128 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_VidaBarra",
+          "persistentUuid": "b11506e1-2a88-4a68-861a-48f80a86139e",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_bar_life.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 170,
+                            "y": 0
+                          },
+                          {
+                            "x": 170,
+                            "y": 12
+                          },
+                          {
+                            "x": 0,
+                            "y": 12
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_Magnolio",
+          "persistentUuid": "5b27e89b-0471-43bb-a3a9-0077f3510f55",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_panel_life.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 280,
+                            "y": 0
+                          },
+                          {
+                            "x": 280,
+                            "y": 86
+                          },
+                          {
+                            "x": 0,
+                            "y": 86
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8248,6 +8419,12 @@
           },
           {
             "objectName": "ShootEnemie"
+          },
+          {
+            "objectName": "HUD_VidaBarra"
+          },
+          {
+            "objectName": "HUD_Magnolio"
           }
         ]
       },
@@ -9067,7 +9244,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"Cena sem título\"",
+                        "\"Fase2\"",
                         ""
                       ]
                     }
@@ -11289,6 +11466,34 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "HUD",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "HUD_VidaBarra",
+                "Resizable",
+                "=",
+                "170*max(0, Magnolio.Health::Health())/max(1, Magnolio.Health::MaxHealth())"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -17623,7 +17828,7 @@
                           },
                           "parameters": [
                             "",
-                            "\"Cena sem título\"",
+                            "\"Fase2\"",
                             ""
                           ]
                         }
