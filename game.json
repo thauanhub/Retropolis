@@ -1448,6 +1448,14 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/btn_abrir_bau.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/btn_abrir_bau.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1919,8 +1927,8 @@
           "name": "Magnolio",
           "persistentUuid": "3e097f57-701e-42b7-bdb3-9ce0eeb1d80c",
           "width": 0,
-          "x": 509,
-          "y": 588,
+          "x": 512,
+          "y": 585,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -2756,6 +2764,22 @@
           "x": 3797,
           "y": 606,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "btn_abrir_bau",
+          "persistentUuid": "2a2a8964-7149-412d-824e-7d01cb53aff8",
+          "width": 0,
+          "x": 570,
+          "y": 568,
+          "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8106,6 +8130,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "HUD_coletar_chave",
+          "persistentUuid": "f95a43e8-704e-45dc-9b20-119640069634",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8166,6 +8191,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "HUD_interagir_com_mecanismo",
+          "persistentUuid": "d2d0e5a0-c0ab-44a8-b220-8497726a850b",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8226,6 +8252,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "HUD_ler_documento",
+          "persistentUuid": "ef677795-5764-4e5a-b6a1-b2e51b5e4230",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8347,6 +8374,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Icone_Chave",
+          "persistentUuid": "85cdb349-4996-4695-ae7b-27d344a116bf",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8684,6 +8712,67 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "btn_abrir_bau",
+          "persistentUuid": "3c91d9da-852d-4b40-9fbb-4baec069232b",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/btn_abrir_bau.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 213,
+                            "y": 10
+                          },
+                          {
+                            "x": 213,
+                            "y": 55
+                          },
+                          {
+                            "x": 10,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8692,6 +8781,15 @@
           {
             "folderName": "HUD",
             "children": [
+              {
+                "objectName": "txtFase2_1_"
+              },
+              {
+                "objectName": "txtFase2_2"
+              },
+              {
+                "objectName": "txtFase2_3"
+              },
               {
                 "objectName": "Mochila"
               },
@@ -8784,13 +8882,7 @@
             "objectName": "BauFase2"
           },
           {
-            "objectName": "txtFase2_1_"
-          },
-          {
-            "objectName": "txtFase2_2"
-          },
-          {
-            "objectName": "txtFase2_3"
+            "objectName": "btn_abrir_bau"
           }
         ]
       },
@@ -11480,6 +11572,14 @@
                 },
                 {
                   "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "btn_abrir_bau"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -11921,85 +12021,145 @@
                 "50",
                 ""
               ]
-            },
+            }
+          ],
+          "actions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "Show"
               },
               "parameters": [
-                "",
-                "\"r\""
+                "btn_abrir_bau",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"r\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "btn_abrir_bau",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "PlatformerObject",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "txtFase2_1_",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "txtFase2_1_"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "txtFase2_2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "txtFase2_2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "txtFase2_3",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Magnolio",
+                "BauFase2",
+                "50",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Magnolio",
-                "PlatformerObject",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "txtFase2_1_",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "4"
-              ]
-            },
-            {
-              "type": {
                 "value": "Hide"
               },
               "parameters": [
-                "txtFase2_1_"
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "txtFase2_2",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "4"
-              ]
-            },
-            {
-              "type": {
-                "value": "Hide"
-              },
-              "parameters": [
-                "txtFase2_2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "txtFase2_3",
-                ""
+                "btn_abrir_bau"
               ]
             }
           ]
@@ -16647,7 +16807,7 @@
           "effects": [],
           "behaviors": [],
           "string": "Você recuperou a chave e saiu da prisão!",
-          "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
           "textAlignment": "left",
           "characterSize": 40,
           "color": {
@@ -16670,7 +16830,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Você recuperou a chave e saiu da prisão!",
-            "font": "05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 40,
