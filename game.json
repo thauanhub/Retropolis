@@ -1230,6 +1230,90 @@
         "metadata": "",
         "name": "assets/CantoraOne-Regular.ttf",
         "userAdded": false
+      },
+      {
+        "file": "assets/Explosion 2.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "2c1c2f4554bf540ef9090c32701ca6fbcaa7dd883d646f0fa58a061eb791d470_Explosion 2.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Explosions/2c1c2f4554bf540ef9090c32701ca6fbcaa7dd883d646f0fa58a061eb791d470_Explosion 2.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Run_08.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "472cda6f105877948dbd86ef37661b1aa954bbca7b133ea8b7f5fec0b6c60ac5_Run_08.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/Wood/Run/472cda6f105877948dbd86ef37661b1aa954bbca7b133ea8b7f5fec0b6c60ac5_Run_08.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Explosion 6.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "20c1edc1dad3064721fc9a0621345e2b79198fae67e5a31cc9c3145b6654ba90_Explosion 6.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Explosions/20c1edc1dad3064721fc9a0621345e2b79198fae67e5a31cc9c3145b6654ba90_Explosion 6.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Laser effect (1).aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "7c1631d4de82cd4dddfa8cfe00c73fbd0dcd9490a4f6e21fbfa4451ab7bb0341_Laser effect (1).aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/7c1631d4de82cd4dddfa8cfe00c73fbd0dcd9490a4f6e21fbfa4451ab7bb0341_Laser effect (1).aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Hit 4.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Hit/a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Adventures of Flying Jack.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "b8f80925b6945ebc0744f2257a3662719c72e3735715d4bd7cd9b268706cdf73_Adventures of Flying Jack.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Epic Dramatic/b8f80925b6945ebc0744f2257a3662719c72e3735715d4bd7cd9b268706cdf73_Adventures of Flying Jack.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -5555,7 +5639,13 @@
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "_BossDerrotado_",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -5697,8 +5787,8 @@
           "name": "Fim",
           "persistentUuid": "19b2a53e-228e-4def-9821-795ccd2770a0",
           "width": 0,
-          "x": 408,
-          "y": 427,
+          "x": 426,
+          "y": 370,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -5814,9 +5904,9 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 3,
+              "Health": 15,
               "CurrentHealth": 0,
-              "MaxHealth": 3,
+              "MaxHealth": 15,
               "DamageCooldown": 0,
               "AllowOverHealing": false,
               "IsHealthJustDamaged": false,
@@ -7896,6 +7986,19 @@
               "parameters": [
                 "Fim"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusicOnChannel"
+              },
+              "parameters": [
+                "",
+                "b8f80925b6945ebc0744f2257a3662719c72e3735715d4bd7cd9b268706cdf73_Adventures of Flying Jack.aac",
+                "1",
+                "40",
+                "65",
+                ""
+              ]
             }
           ]
         },
@@ -7969,6 +8072,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Mudar Funcao",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8232,6 +8336,18 @@
                         "=",
                         "\"Andar\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "472cda6f105877948dbd86ef37661b1aa954bbca7b133ea8b7f5fec0b6c60ac5_Run_08.wav",
+                        "no",
+                        "",
+                        "0.2"
+                      ]
                     }
                   ]
                 },
@@ -8313,6 +8429,54 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "DiretorHitbox",
+                        "Magnolio",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        "Estado",
+                        "=",
+                        "\"Melee\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "StringObjectVariable"
                       },
                       "parameters": [
@@ -8366,6 +8530,18 @@
                         "Animation",
                         "=",
                         "\"Melee\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+                        "",
+                        "",
+                        ""
                       ]
                     },
                     {
@@ -8620,6 +8796,18 @@
                         "=",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "7c1631d4de82cd4dddfa8cfe00c73fbd0dcd9490a4f6e21fbfa4451ab7bb0341_Laser effect (1).aac",
+                        "",
+                        "",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -8727,6 +8915,18 @@
                       "parameters": [
                         "",
                         "\"CadenciaTiro\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "7c1631d4de82cd4dddfa8cfe00c73fbd0dcd9490a4f6e21fbfa4451ab7bb0341_Laser effect (1).aac",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -8927,6 +9127,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Recuperacao",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9078,6 +9279,17 @@
                         "Health",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        "Estado",
+                        "!=",
+                        "\"Explodindo\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -9163,6 +9375,17 @@
                         "Diretor",
                         "Health",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        "Estado",
+                        "!=",
+                        "\"Explodindo\""
                       ]
                     }
                   ],
@@ -9250,6 +9473,17 @@
                         "Health",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        "Estado",
+                        "!=",
+                        "\"Explodindo\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -9311,6 +9545,17 @@
                         "Diretor",
                         "Health",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        "Estado",
+                        "!=",
+                        "\"Explodindo\""
                       ]
                     }
                   ],
@@ -9380,177 +9625,180 @@
                             "=",
                             "\"Dead\""
                           ]
-                        }
-                      ],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                              },
-                              "parameters": [
-                                "Diretor",
-                                "Animation"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Once"
-                              },
-                              "parameters": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetStringObjectVariable"
-                              },
-                              "parameters": [
-                                "Diretor",
-                                "Estado",
-                                "=",
-                                "\"Explodindo\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"ExplosaoTick\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Explosao\""
-                              ]
-                            }
-                          ]
                         },
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "StringObjectVariable"
-                              },
-                              "parameters": [
-                                "Diretor",
-                                "Estado",
-                                "=",
-                                "\"Explodindo\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "CompareTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"ExplosaoTick\"",
-                                ">=",
-                                "0.8"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Explosion1",
-                                "Diretor.X() + RandomInRange(-30, 70)",
-                                "Diretor.Y() + RandomInRange(-70, 0)",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"ExplosaoTick\""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "CompareTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Explosao\"",
-                                ">=",
-                                "7"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetStringObjectVariable"
-                              },
-                              "parameters": [
-                                "Diretor",
-                                "Estado",
-                                "=",
-                                "\"Morto\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "Diretor",
-                                ""
-                              ]
-                            }
+                          "type": {
+                            "value": "PauseMusicChannel"
+                          },
+                          "parameters": [
+                            "",
+                            "1"
                           ]
                         }
                       ]
                     },
                     {
-                      "disabled": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "ParticleSystem::NoMoreParticles"
+                            "value": "Health::Health::IsDead"
                           },
                           "parameters": [
-                            "Explosion1"
+                            "Diretor",
+                            "Health",
+                            ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                          },
+                          "parameters": [
+                            "Diretor",
+                            "Animation"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "Delete"
+                            "value": "SetStringObjectVariable"
                           },
                           "parameters": [
-                            "Explosion1",
-                            ""
+                            "Diretor",
+                            "Estado",
+                            "=",
+                            "\"Explodindo\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"ExplosaoTick\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Explosao\""
                           ]
                         }
                       ]
                     }
                   ],
                   "parameters": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        "Estado",
+                        "=",
+                        "\"Explodindo\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"ExplosaoTick\"",
+                        ">=",
+                        "0.8"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Explosion1",
+                        "Diretor.X() + RandomInRange(-30, 70)",
+                        "Diretor.Y() + RandomInRange(-70, 0)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"ExplosaoTick\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "2c1c2f4554bf540ef9090c32701ca6fbcaa7dd883d646f0fa58a061eb791d470_Explosion 2.aac",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Explosao\"",
+                        ">=",
+                        "7"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Diretor",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "_BossDerrotado_",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": []
@@ -10898,13 +11146,55 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "StringObjectVariable"
+                    "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "Diretor",
-                    "Estado",
-                    "=",
-                    "\"Morto\""
+                    "_BossDerrotado_",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Cutscene\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Cutscene\"",
+                    ">=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "_BossDerrotado_",
+                    "True",
+                    ""
                   ]
                 }
               ],
@@ -10917,73 +11207,82 @@
                     "Fim",
                     ""
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "ResetTimer"
+                    "value": "CompareTimer"
                   },
                   "parameters": [
                     "",
-                    "\"Cutscene\""
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CompareTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Cutscene\"",
-                        ">=",
-                        "2"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Fim",
-                        "Text",
-                        "=",
-                        "\"Magnólio: Mas essa é apenas a primeira faísca da revolução \""
-                      ]
-                    }
+                    "\"Cutscene\"",
+                    ">=",
+                    "4"
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CompareTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Cutscene\"",
-                        ">=",
-                        "4"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"FIM\"",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "_BossDerrotado_",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Fim",
+                    "Text",
+                    "=",
+                    "\"Magnólio: Mas essa é apenas a primeira faísca da revolução \""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Cutscene\"",
+                    ">=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "_BossDerrotado_",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"FIM\"",
+                    ""
                   ]
                 }
               ]
@@ -11258,8 +11557,8 @@
           "name": "NewText",
           "persistentUuid": "aa79ea45-c724-4754-bee5-3afc8439c546",
           "width": 99,
-          "x": 539,
-          "y": 264,
+          "x": 610,
+          "y": 321,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -11320,7 +11619,34 @@
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetWindowSize"
+              },
+              "parameters": [
+                "",
+                "1280",
+                "720",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
