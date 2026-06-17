@@ -11398,7 +11398,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3673257545058886,
+        "zoomFactor": 1.4307927813134511,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -12414,7 +12414,7 @@
           "name": "HUD_VidaBarra",
           "persistentUuid": "3c17e17f-9ca2-4001-93b7-8969209e9505",
           "width": 120,
-          "x": 65,
+          "x": 14,
           "y": 44,
           "zOrder": 1004,
           "numberProperties": [],
@@ -22907,7 +22907,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2530387740589861,
+        "zoomFactor": 1.3841198046306862,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
