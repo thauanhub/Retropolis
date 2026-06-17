@@ -11398,7 +11398,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.4307927813134511,
+        "zoomFactor": 0.46331118245140596,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -22907,7 +22907,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.3841198046306862,
+        "zoomFactor": 1.2121641972173687,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -30065,6 +30065,17 @@
                     "Animation",
                     "!=",
                     "\"Dano\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "Health",
+                    ""
                   ]
                 }
               ],
