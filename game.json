@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 271,
+    "build": 272,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -4020,7 +4020,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 2.276247839383741,
+        "zoomFactor": 0.6672773998330076,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -11398,7 +11398,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.46331118245140596,
+        "zoomFactor": 2.514367296498797,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -12346,8 +12346,8 @@
           "name": "Icone_pocao_de_vida",
           "persistentUuid": "a3441b77-80ca-41d7-a873-f6651910e6df",
           "width": 83,
-          "x": 36,
-          "y": 112,
+          "x": 33,
+          "y": 113,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -12362,8 +12362,8 @@
           "layer": "HUD",
           "name": "TxtQtdPocaoVida",
           "persistentUuid": "00704e5b-0431-4ea2-9e75-0c77bf19af09",
-          "width": 15,
-          "x": 78,
+          "width": 27,
+          "x": 66,
           "y": 155,
           "zOrder": 23,
           "numberProperties": [],
@@ -22006,7 +22006,7 @@
                       "parameters": [
                         "Magnolio",
                         "Health",
-                        "5",
+                        "3",
                         ""
                       ]
                     },
@@ -22907,7 +22907,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2121641972173687,
+        "zoomFactor": 2.4323477282328336,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -22918,6 +22918,11 @@
           "name": "_BossDerrotado_",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "PocoesSalvas",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -23095,7 +23100,7 @@
           "name": "HUD_Nome",
           "persistentUuid": "dec4aca4-7b4b-464e-b287-864f33b7203e",
           "width": 71,
-          "x": 43,
+          "x": 36,
           "y": 8,
           "zOrder": 1002,
           "numberProperties": [],
@@ -23112,7 +23117,7 @@
           "name": "HUD_VidaFundo",
           "persistentUuid": "cac7dcea-3dae-4ca8-a09e-97e981d5f98c",
           "width": 84,
-          "x": 43,
+          "x": 29,
           "y": 26,
           "zOrder": 1003,
           "numberProperties": [],
@@ -23129,7 +23134,7 @@
           "name": "HUD_VidaBarra",
           "persistentUuid": "c0b60b14-8c46-4e22-84bb-1a4d6410e921",
           "width": 84,
-          "x": 43,
+          "x": 29,
           "y": 26,
           "zOrder": 1004,
           "numberProperties": [],
@@ -23145,7 +23150,7 @@
           "layer": "HUD",
           "name": "Mochila",
           "persistentUuid": "c9730e00-ba24-48a7-886a-eb3867700c9f",
-          "width": 107,
+          "width": 155,
           "x": -1,
           "y": 47,
           "zOrder": 15,
@@ -23163,7 +23168,7 @@
           "name": "Icone_Chave",
           "persistentUuid": "339c1237-8dd6-4258-8a6c-60b697227925",
           "width": 29,
-          "x": 0,
+          "x": 8,
           "y": 75,
           "zOrder": 16,
           "numberProperties": [],
@@ -23180,7 +23185,7 @@
           "name": "Icone_pocao_de_vida",
           "persistentUuid": "57723357-0f1f-419c-8f8e-c61d14639f3b",
           "width": 37,
-          "x": 16,
+          "x": 30,
           "y": 73,
           "zOrder": 22,
           "numberProperties": [],
@@ -23196,9 +23201,9 @@
           "layer": "HUD",
           "name": "TxtQtdPocaoVida",
           "persistentUuid": "d87c5d66-afd6-43f2-a46b-e0025b846ca4",
-          "width": 6,
-          "x": 34,
-          "y": 97,
+          "width": 9,
+          "x": 50,
+          "y": 96,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -23314,9 +23319,9 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 15,
+              "Health": 20,
               "CurrentHealth": 0,
-              "MaxHealth": 15,
+              "MaxHealth": 20,
               "DamageCooldown": 0,
               "AllowOverHealing": false,
               "IsHealthJustDamaged": false,
@@ -24841,6 +24846,7 @@
           ],
           "behaviors": [
             {
+              "isFolded": true,
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
               "FireCooldown": 0.1,
@@ -24880,12 +24886,11 @@
               "EffectName": ""
             },
             {
-              "isFolded": true,
               "name": "Health",
               "type": "Health::Health",
               "Health": 3,
               "CurrentHealth": 0,
-              "MaxHealth": 6,
+              "MaxHealth": 3,
               "DamageCooldown": 0,
               "AllowOverHealing": false,
               "IsHealthJustDamaged": false,
@@ -26717,8 +26722,8 @@
           "behaviors": [
             {
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "platformType": "NormalPlatform",
               "canBeGrabbed": true,
               "yGrabOffset": 0
             }
@@ -26790,6 +26795,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 10000,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -26802,9 +26809,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "useRepeatedJump": false,
               "xGrabTolerance": 10,
@@ -29056,19 +29061,9 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "QtdPocaoVida",
+                    "PocoesSalvas",
                     "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "Slot2",
-                    "=",
-                    "\"Vazio\""
+                    "GlobalVariable(QtdPocaoVida)"
                   ]
                 }
               ]
@@ -29326,7 +29321,7 @@
                   "parameters": [
                     "Magnolio",
                     "Health",
-                    "5",
+                    "3",
                     ""
                   ]
                 },
@@ -29949,7 +29944,7 @@
                   "parameters": [
                     "QtdPocaoVida",
                     "=",
-                    "0"
+                    "Variable(PocoesSalvas)"
                   ]
                 },
                 {
