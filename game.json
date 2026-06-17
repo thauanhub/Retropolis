@@ -1430,6 +1430,22 @@
         "name": "assets/hud/HUD_texto_recuperouachave_fase1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/HUD_pocao_de_vida.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/HUD_pocao_de_vida.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/HUD_mensagem_pocao.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/HUD_mensagem_pocao.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1478,6 +1494,16 @@
       "name": "TemChaveCela",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "QtdPocaoVida",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "MensagemInventario",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -1845,7 +1871,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7619362677197696,
+        "zoomFactor": 11.183205634892353,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1865,7 +1891,7 @@
       ],
       "variables": [
         {
-          "name": "a",
+          "name": "ChanceDeDroparPocao",
           "type": "number",
           "value": 0
         }
@@ -2533,6 +2559,57 @@
           "x": 574,
           "y": 565,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 39,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Icone_pocao_de_vida",
+          "persistentUuid": "cdb32587-00cf-461b-b171-07ea65fa993f",
+          "width": 83,
+          "x": 71,
+          "y": 196,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 11,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "TxtQtdPocaoVida",
+          "persistentUuid": "66ed928e-bf05-40f4-a5f2-346fd49d6dbe",
+          "width": 15,
+          "x": 113,
+          "y": 239,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_mensagem_ganhou_pocao",
+          "persistentUuid": "c3444f0d-3f6f-4290-84be-a81640b10c21",
+          "width": 431,
+          "x": 475,
+          "y": 113,
+          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8178,6 +8255,169 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Icone_pocao_de_vida",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/HUD_pocao_de_vida.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 307,
+                            "y": 41
+                          },
+                          {
+                            "x": 430,
+                            "y": 41
+                          },
+                          {
+                            "x": 430,
+                            "y": 304
+                          },
+                          {
+                            "x": 307,
+                            "y": 304
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "TxtQtdPocaoVida",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 10,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 10,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_mensagem_ganhou_pocao",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/HUD_mensagem_pocao.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 34,
+                            "y": 28
+                          },
+                          {
+                            "x": 999,
+                            "y": 28
+                          },
+                          {
+                            "x": 999,
+                            "y": 182
+                          },
+                          {
+                            "x": 34,
+                            "y": 182
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8203,6 +8443,15 @@
               },
               {
                 "objectName": "Icone_Chave"
+              },
+              {
+                "objectName": "Icone_pocao_de_vida"
+              },
+              {
+                "objectName": "TxtQtdPocaoVida"
+              },
+              {
+                "objectName": "HUD_mensagem_ganhou_pocao"
               }
             ]
           },
@@ -9042,6 +9291,50 @@
                     "Slot1",
                     "=",
                     "\"Vazio\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "QtdPocaoVida",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Slot2",
+                    "=",
+                    "\"Vazio\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Icone_pocao_de_vida"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "TxtQtdPocaoVida"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_mensagem_ganhou_pocao"
                   ]
                 }
               ],
@@ -9991,50 +10284,6 @@
                     ""
                   ]
                 }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Guardas",
-                        "Animation",
-                        "=",
-                        "\"Death\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                      },
-                      "parameters": [
-                        "Guardas",
-                        "Animation"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Patrulheiro",
-                        ""
-                      ]
-                    }
-                  ]
-                }
               ]
             },
             {
@@ -10080,11 +10329,84 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Delete"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Patrulheiro",
-                    ""
+                    "ChanceDeDroparPocao",
+                    "=",
+                    "RandomInRange(1,100)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "ChanceDeDroparPocao",
+                        "<=",
+                        "40"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "QtdPocaoVida",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Slot2",
+                        "=",
+                        "\"PocaoVida\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "HUD_mensagem_ganhou_pocao",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MensagemPocao\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Patrulheiro",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -10924,6 +11246,50 @@
                     "=",
                     "\"Nenhum\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Icone_pocao_de_vida"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "TxtQtdPocaoVida"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_mensagem_ganhou_pocao"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "QtdPocaoVida",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Slot2",
+                    "=",
+                    "\"Vazio\""
+                  ]
                 }
               ]
             },
@@ -11302,6 +11668,236 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "QtdPocaoVida",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "Icone_pocao_de_vida"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "TxtQtdPocaoVida"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Slot2",
+                    "=",
+                    "\"Vazio\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TxtQtdPocaoVida",
+                    "Text",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "QtdPocaoVida",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "Icone_pocao_de_vida",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "TxtQtdPocaoVida",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Slot2",
+                    "=",
+                    "\"PocaoVida\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TxtQtdPocaoVida",
+                    "Text",
+                    "=",
+                    "\"x\" + ToString(GlobalVariable(QtdPocaoVida))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MensagemPocao\"",
+                    ">",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "HUD_mensagem_ganhou_pocao"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MensagemPocao\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MensagemPocao\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Num2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "QtdPocaoVida",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Heal"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "Health",
+                    "5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::SetMaxHealthOp"
+                  },
+                  "parameters": [
+                    "Magnolio",
+                    "Health",
+                    "=",
+                    "3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "QtdPocaoVida",
+                    "-",
+                    "1"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -11530,6 +12126,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "VerticalTiledSpriteParallax",
@@ -16217,6 +16817,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TxtMensagemInventario",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/HUD_mensagem_pocao.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 34,
+                            "y": 28
+                          },
+                          {
+                            "x": 999,
+                            "y": 28
+                          },
+                          {
+                            "x": 999,
+                            "y": 182
+                          },
+                          {
+                            "x": 34,
+                            "y": 182
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -16233,6 +16893,9 @@
               },
               {
                 "objectName": "HUD_texto_recuperouachave"
+              },
+              {
+                "objectName": "TxtMensagemInventario"
               }
             ]
           },
