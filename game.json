@@ -1446,6 +1446,54 @@
         "name": "assets/hud/HUD_mensagem_pocao.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_panel_life.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_panel_life.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_bar_bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_bar_bg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_bar_life.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_bar_life.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_minimap_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_minimap_panel.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_minimap_room.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_minimap_room.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hud/hud_minimap_player.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hud/hud_minimap_player.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1871,7 +1919,7 @@
         "gridColor": 13424895,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 11.183205634892353,
+        "zoomFactor": 0.5290357402156944,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2610,6 +2658,231 @@
           "x": 475,
           "y": 113,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_PainelVida",
+          "persistentUuid": "0c326c26-741d-4790-83dc-1a5f126e98c8",
+          "width": 0,
+          "x": 24,
+          "y": 24,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_Nome",
+          "persistentUuid": "27a6c3ae-50d3-4907-85c9-ab5fef643e79",
+          "width": 0,
+          "x": 110,
+          "y": 42,
+          "zOrder": 1002,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_VidaFundo",
+          "persistentUuid": "193f09db-4f1e-44dc-ac50-b9bba9672dab",
+          "width": 0,
+          "x": 109,
+          "y": 73,
+          "zOrder": 1003,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_VidaBarra",
+          "persistentUuid": "aae04acb-0c41-4149-873c-3bfd6bb76eee",
+          "width": 0,
+          "x": 109,
+          "y": 73,
+          "zOrder": 1004,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaPainel",
+          "persistentUuid": "6fb89501-c186-4c52-bef9-296a73797e8a",
+          "width": 0,
+          "x": 1033,
+          "y": 24,
+          "zOrder": 1000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaSala1",
+          "persistentUuid": "35e6bbe3-5cf6-40a1-992e-0d4cc12c518d",
+          "width": 0,
+          "x": 1058,
+          "y": 83,
+          "zOrder": 1001,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "flippedY": true,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaSala2",
+          "persistentUuid": "511319f1-09f0-4124-b5f0-2396cb4d0c30",
+          "width": 0,
+          "x": 1113,
+          "y": 83,
+          "zOrder": 1001,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaSala3",
+          "persistentUuid": "6cbf3a30-51cc-4097-a558-85dbeade9caf",
+          "width": 0,
+          "x": 1168,
+          "y": 83,
+          "zOrder": 1001,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaSala4",
+          "persistentUuid": "f01a2a1d-df24-46e9-ba8a-c99d7275f7fe",
+          "width": 0,
+          "x": 1058,
+          "y": 54,
+          "zOrder": 1011,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaSala5",
+          "persistentUuid": "6264f90f-a5e7-4cb0-9a44-b6a44b84e92a",
+          "width": 0,
+          "x": 1113,
+          "y": 54,
+          "zOrder": 1012,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaSala6",
+          "persistentUuid": "643e5880-4351-4490-bd38-8cd4fd07c4be",
+          "width": 0,
+          "x": 1168,
+          "y": 54,
+          "zOrder": 1013,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_TituloMapa",
+          "persistentUuid": "9d61847b-6f63-4d26-987e-8d80ed660f29",
+          "width": 0,
+          "x": 1056,
+          "y": 32,
+          "zOrder": 1009,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_AreaMapa",
+          "persistentUuid": "ca0173d3-5c78-46da-8add-d18a8713727b",
+          "width": 0,
+          "x": 1123,
+          "y": 36,
+          "zOrder": 1008,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "HUD_MapaJogador",
+          "persistentUuid": "9d745de0-b56d-470f-b9d8-7b58da1e02f2",
+          "width": 0,
+          "x": 1191,
+          "y": 92,
+          "zOrder": 1010,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7900,6 +8173,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Mochila",
+          "persistentUuid": "182fb726-b402-4d1d-8f5b-a8184e04f1a4",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8418,6 +8692,809 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_PainelVida",
+          "persistentUuid": "4dc3d3fa-a582-4b67-8a44-ae2e1d82998b",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_panel_life.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 280,
+                            "y": 0
+                          },
+                          {
+                            "x": 280,
+                            "y": 86
+                          },
+                          {
+                            "x": 0,
+                            "y": 86
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HUD_Nome",
+          "persistentUuid": "30efdd00-0bb4-4ae1-8f4f-6a60d3b85d22",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "MAGNOLIO",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 18,
+          "color": {
+            "b": 137,
+            "g": 205,
+            "r": 236
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": -10,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MAGNOLIO",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 18,
+            "lineHeight": 0,
+            "color": "236;205;137"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_VidaFundo",
+          "persistentUuid": "27e64d03-b49f-4b9e-ac06-c0a8caec00a7",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_bar_bg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 170,
+                            "y": 0
+                          },
+                          {
+                            "x": 170,
+                            "y": 12
+                          },
+                          {
+                            "x": 0,
+                            "y": 12
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_VidaBarra",
+          "persistentUuid": "185a82d1-fd73-4caf-97ac-b0ceecd15f4d",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_bar_life.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 170,
+                            "y": 0
+                          },
+                          {
+                            "x": 170,
+                            "y": 12
+                          },
+                          {
+                            "x": 0,
+                            "y": 12
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaPainel",
+          "persistentUuid": "eb24f6ae-cb30-4532-8520-c68b3007118a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_panel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 220,
+                            "y": 0
+                          },
+                          {
+                            "x": 220,
+                            "y": 94
+                          },
+                          {
+                            "x": 0,
+                            "y": 94
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaSala1",
+          "persistentUuid": "a5960a2c-7ea4-4ca0-a4ff-a46bea2b19c4",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_room.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaSala2",
+          "persistentUuid": "e8a7fe77-6f4e-486b-af57-cd0fafa20915",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_room.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaSala3",
+          "persistentUuid": "cc5d82e4-8b7f-4466-855c-06714dd8c989",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_room.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaSala4",
+          "persistentUuid": "d1c2b570-8a93-4fc5-8457-43561f7a72e6",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_room.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaSala5",
+          "persistentUuid": "94a23817-5a58-4626-a2ab-b5d403756eb6",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_room.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaSala6",
+          "persistentUuid": "7da40c10-14fa-4287-8889-5ae74a7afb5f",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_room.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 0
+                          },
+                          {
+                            "x": 54,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HUD_TituloMapa",
+          "persistentUuid": "651cbd40-a5e3-49ea-b310-a1d675a86dbc",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "MAPA",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 16,
+          "color": {
+            "b": 137,
+            "g": 205,
+            "r": 236
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MAPA",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 16,
+            "lineHeight": 0,
+            "color": "236;205;137"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HUD_AreaMapa",
+          "persistentUuid": "e24fcbdc-d11a-45f0-8153-7bad7cb1f2b5",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Area: Setor",
+          "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 10,
+          "color": {
+            "b": 137,
+            "g": 205,
+            "r": 236
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 2,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Area: Setor",
+            "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 10,
+            "lineHeight": 0,
+            "color": "236;205;137"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HUD_MapaJogador",
+          "persistentUuid": "3dc72cbd-b31b-40e4-8d02-0a322a0c103a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/hud/hud_minimap_player.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 10,
+                            "y": 0
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8445,6 +9522,12 @@
                 "objectName": "Icone_Chave"
               },
               {
+                "objectName": "HUD_Nome"
+              },
+              {
+                "objectName": "HUD_PainelVida"
+              },
+              {
                 "objectName": "Icone_pocao_de_vida"
               },
               {
@@ -8452,6 +9535,42 @@
               },
               {
                 "objectName": "HUD_mensagem_ganhou_pocao"
+              },
+              {
+                "objectName": "HUD_VidaFundo"
+              },
+              {
+                "objectName": "HUD_VidaBarra"
+              },
+              {
+                "objectName": "HUD_MapaPainel"
+              },
+              {
+                "objectName": "HUD_MapaSala1"
+              },
+              {
+                "objectName": "HUD_MapaSala2"
+              },
+              {
+                "objectName": "HUD_MapaSala3"
+              },
+              {
+                "objectName": "HUD_MapaSala4"
+              },
+              {
+                "objectName": "HUD_MapaSala5"
+              },
+              {
+                "objectName": "HUD_MapaSala6"
+              },
+              {
+                "objectName": "HUD_TituloMapa"
+              },
+              {
+                "objectName": "HUD_AreaMapa"
+              },
+              {
+                "objectName": "HUD_MapaJogador"
               }
             ]
           },
@@ -11901,6 +13020,408 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "VIDA e MiniMapa"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "HUD_VidaBarra",
+                "Resizable",
+                "=",
+                "170 * max(0, Magnolio.Health::Health()) / max(1, Magnolio.Health::MaxHealth())"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                "<",
+                "-300"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.Y()",
+                ">=",
+                "450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala1.X() + 22"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala1.Y() + 9"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HUD_AreaMapa",
+                "Text",
+                "=",
+                "\"Baixo-Oeste\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                ">=",
+                "-300"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                "<",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.Y()",
+                ">=",
+                "450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala2.X() + 22"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala2.Y() + 9"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HUD_AreaMapa",
+                "Text",
+                "=",
+                "\"Baixo-Centro\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                ">=",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.Y()",
+                ">=",
+                "450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala3.X() + 22"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala3.Y() + 9"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HUD_AreaMapa",
+                "Text",
+                "=",
+                "\"Baixo-Leste\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                "<",
+                "-300"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.Y()",
+                "<",
+                "450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala4.X() + 22"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala4.Y() + 9"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HUD_AreaMapa",
+                "Text",
+                "=",
+                "\"Cima-Oeste\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                ">=",
+                "-300"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                "<",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.Y()",
+                "<",
+                "450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala5.X() + 22"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala5.Y() + 9"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HUD_AreaMapa",
+                "Text",
+                "=",
+                "\"Cima-Centro\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.X()",
+                ">=",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Magnolio.Y()",
+                "<",
+                "450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala6.X() + 22"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "HUD_MapaJogador",
+                "=",
+                "HUD_MapaSala6.Y() + 9"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HUD_AreaMapa",
+                "Text",
+                "=",
+                "\"Cima-Leste\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
